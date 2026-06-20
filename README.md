@@ -4,6 +4,10 @@ An AI-powered backend that generates **interactive, branching stories** using LL
 Built with **FastAPI**, **LangChain**, and **OpenRouter**, this project allows users to create dynamic stories where each choice leads to a new path.
 
 ---
+## 🌐 Live Demo
+
+- 🎨 Frontend: https://story-forge-interactive-story-gener.vercel.app  
+- ⚙️ Backend API: https://storyforge-interactive-story-generator.onrender.com  
 
 ## ✨ Features
 
