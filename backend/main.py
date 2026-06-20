@@ -1,9 +1,7 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 import os
 from dotenv import load_dotenv
-import requests
 from core.config import settings
 from routers import story,job
 from db.database import create_tables
@@ -29,5 +27,3 @@ app.add_middleware(
 app.include_router(story.router,prefix=settings.API_PREFIX)
 app.include_router(job.router,prefix=settings.API_PREFIX)
 
-class StoryRequest(BaseModel):
-    prompt: str
